@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
   <header>
     <div class="wrap">
 <h1><img src="logo.png"></h1>
@@ -27,47 +29,54 @@
 </div>
 </div>
 </section>
+
+
 <section class="products">
 <div class="wrap">
   <nav class="filters">
-<a class="selected">all</a>
-<a>Bandanas</a>
-<a>Accessories</a>
-<a>Bags</a>
+<a herf="#" class="show-filters">Show Filters</a>
+<ul class="filter-list">
+  <li><a href="#" data-filter=".product">All</a></li>
+  <li><a href="#" data-filter=".Bandanas">Bandanas</a></li>
+  <li><a href="#" data-filter=".Accessories">Accessories</a></li>
+  <li><a href="#" data-filter=".Bags">Bags</a></li>
+</ul>
   </nav>
 
-<div class="product">
+
+<div class="product Bandanas">
   <h4>Bandana #1</h4>
   <p>£15</p>
-  <img src="image_1.jpg">
+  <img src="image_1.jpg" >
 </div>
-<div class="product">
+<div class="product Accessories">
   <h4>Bandana #2</h4>
   <p>£15</p>
   <img src="image_2.jpg">
 </div>
-<div class="product">
+<div class="product Bags">
   <h4>Bandana #3</h4>
   <p>£15</p>
   <img src="image_3.jpg">
 </div>
-<div class="product">
+<div class="product bandana">
   <h4>Bandana #4</h4>
   <p>£15</p>
   <img src="image_4.jpg">
 </div>
-<div class="product">
+<div class="product Accessories">
   <h4>Bandana #5</h4>
   <p>£15</p>
   <img src="image_5.jpg">
 </div>
-<div class="product">
+<div class="product Bags">
   <h4>Bandana #6</h4>
   <p>£15</p>
   <img src="image_6.jpg">
 </div>
 </div>
 </section>
-
+<script src="assets/jquery.js"></script>
+<script src="assets/main.js"></script>
 </body>
 </html>

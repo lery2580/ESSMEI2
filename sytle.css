@@ -4,7 +4,7 @@ body{
     margin:0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    line-height: 1.3;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -62,6 +62,9 @@ padding-bottom: 90px;
 
 }
 
+.products{
+    margin-bottom: 40px;
+}
 a.selected{
     border-bottom: 4px solid #feea34;
     font-weight: 600;
@@ -71,19 +74,40 @@ nav.filters{
 
     margin-top: 40px;
     margin-bottom:20px;
+   
 }
 
 .filters a{
     margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+ 
+}
+.filters ul{
+    margin-top:10px;
+    list-style: none;
+    padding: 0;
+
 }
 
+.filters li{
+
+    display: inline;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.filters .show-filters{
+    color: #bfbfb7;
+    display: none;
+}
 .product{
     position: relative;
     float: left;
     width: 320px;
     display: block;
     background-color: #feea34;
-   
+    
 }
 
 div.product h4{
@@ -95,7 +119,6 @@ div.product h4{
     transition: all 0.3s;
     z-index: 2;
     font-size: 24px;
-
 }
 
 div.product p{
@@ -123,3 +146,63 @@ transition: all 0.5s;
 img{
     max-width: 100%;
 }
+
+@media (max-width:860px){
+    div.font{
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+}
+
+@media (max-width:1000px){
+    div.wrap{
+        max-width: 640px;
+    }
+}
+
+@media (max-width:680px){
+
+    div.product{
+        width: auto;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    div.wrap{
+        margin: auto 30px;
+    }
+    .hero h2{
+        font-size:24px;
+    }
+    .hero h3{
+        font-size: 18px;
+    }
+    section.hero{
+        background-image: none;
+        background-color: #bfbfb7;
+    }
+    div.font{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .filters .show-filters{
+        display: block;
+        margin: 0px;
+        cursor: pointer;
+    }
+    .filters li{
+        display: block;
+        margin-bottom: 4px;
+    }
+    .filter-list{
+        display: none;
+    }
+    
+}
+
+@media (min-width:680px){
+    .filter-list{
+        display: block !important;
+    }
+}
+
